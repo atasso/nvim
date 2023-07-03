@@ -4,12 +4,12 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     -- LSP Support
-    {'neovim/nvim-lspconfig'},             -- Required
     {                                      -- Optional
     'williamboman/mason.nvim',
     build = ":MasonUpdate",
   },
   {'williamboman/mason-lspconfig.nvim'}, -- Optional
+    {'neovim/nvim-lspconfig'},             -- Required
 
   -- Autocompletion
   {
