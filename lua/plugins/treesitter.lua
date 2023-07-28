@@ -1,7 +1,7 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   build =  ':TSUpdate',
-   event = { "BufReadPost", "BufNewFile" },
+  event = { "BufReadPost", "BufNewFile" },
   opts =  {
     ensure_installed = { "javascript", "typescript",  "css", "c", "lua", "vim", "vimdoc", "query" },
 
@@ -11,6 +11,14 @@ return {
     -- Automatically install missing parsers when entering buffer
     -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
     auto_install = true,
+
+    autotag = {
+      enable = true,
+    },
+
+    indent = {
+      enable = true,
+    },
 
     highlight = {
       enable = true,

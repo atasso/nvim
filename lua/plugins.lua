@@ -15,8 +15,5 @@ return {
    'tpope/vim-commentary',
    'tpope/vim-surround',
    'nvim-tree/nvim-web-devicons',
-
-
-
-
+   'windwp/nvim-ts-autotag',
 }
